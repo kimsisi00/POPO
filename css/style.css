@@ -1,0 +1,536 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'yg-jalnan';
+}
+
+ul {list-style: none;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #fff5f7;
+    background-color: (248, 231, 236);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap {
+    width: 100%;
+    /* padding-bottom: 400px; */
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 114px;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+header nav {
+    width: 80%;
+    line-height: 70px;
+    margin: 0px auto;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 1px 10px 10px #f5cfdb;
+}
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: #e02966;
+}
+
+/* ----- */
+header nav ul li.on a {
+    background-color: pink;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 1.3em ;
+} 
+main {
+    margin-top: 114px;
+}
+.item {
+    height: 100vh;
+    padding: 20px;
+}
+
+
+
+main #home .top {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+main #home .box {
+    border: 2px solid rgb(255, 110, 135);
+    border-radius: 20px;
+    margin: 1.5rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    position: absolute;
+    top: 0;  left: 48%;
+    opacity: 0;
+}
+
+main #home .top >* {
+    opacity: 0;
+}
+main #home .top img {
+    width: 40px;
+    height: 40px;
+    position: absolute;          
+}
+main #home .top .hart1 img {
+    left: 63%; 
+}
+main #home .top .hart2 img{
+    right: 25%; 
+}
+main #home .top .hart3 img{
+    left: 57%; 
+}
+main #home .top .hart4 img{
+    left: 31%; 
+}
+main #home .top .hart5 img{
+    left: 20%; 
+}
+main #home .top .hart6 img{
+    right: 15%; 
+}
+
+
+/* profile */ 
+#profile .king {
+    display: flex;
+    margin: 0 auto;
+    gap: 7rem;    
+}
+#profile img {
+    margin: 30px;
+    border-radius: 50%;
+    width: 300px;
+
+}
+#profile h1 ,#profile h2, #project h1,  #contact h2, .coding h1{
+    color: #fd9191;
+}
+#profile {
+    display: flex;
+}
+section .profile-left p {
+    line-height: 40px;
+}
+section .profile-right {
+    display: flex;
+}
+section .profile-right .rightrr {
+    margin-top: 5rem;
+    margin-left: 100px;
+}
+section .profile-right p {
+    margin-bottom: 1.5rem;
+    height: 50px;
+    padding-left: 50px;
+    line-height: 50px;
+}
+section .profile-aa .right-bottom {
+    margin-top: 4rem;
+    /* line-height: 20px; */
+}
+section .profile-aa .right-bottom h2 {
+    margin-bottom: 1.5rem;
+}
+section .profile-aa .right-bottom p {
+    line-height: 35px;
+}
+
+section .profile-right .html {
+    margin-top: 3rem;
+    background: url(../image/html.png)no-repeat 2px/contain;
+}
+section .profile-right .css {
+    background: url(../image/css.png) no-repeat 2px/contain;
+}
+section .profile-right .js {
+    background: url(../image/js.png)no-repeat 2px/contain;
+}
+section .profile-right .ae {
+    background: url(../image/ae.png)no-repeat 2px/contain;
+    padding-left: 70px;
+}
+section .profile-right .ps {
+    background: url(../image/ps.png)no-repeat 2px/contain;
+    padding-left: 70px;
+}
+section .profile-right .pr {
+    background: url(../image/pr.png)no-repeat 2px/contain;
+    padding-left: 70px;
+}
+
+/* clone coding */
+section .coding {
+    width: 100%;
+}
+section .coding .coding-left-pc {
+    width: 400px;
+    background: url('../image/carrotbg.png') no-repeat 0 0/cover ;
+    overflow: hidden;
+    transition: all 1s;
+}
+section .coding .coding-left-pc:hover {
+    background-position: left bottom;
+}
+
+section .coding h1 {
+    font-size: 24px;
+}
+section .coding img {
+    width: 400px;
+    height: 334px;
+    object-fit: cover;
+}
+section .coding h2 {
+    margin-top: 30px;
+}
+section .coding p {
+    padding: 10px;
+}
+section .coding button {
+    border: none;
+    background-color: #fff;
+    padding: 8px 20px ;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+section .coding button:hover {
+    background-color: #ddd;
+} 
+
+section .coding1 {
+    display: flex;
+    justify-content: center;
+    
+}
+section .coding-right {
+    margin-left: 100px;
+}
+
+/* videoplay */
+section.gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.gallery-header {
+    width: 20vw;
+    height: 75%;
+    padding: 3vh 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.gallery-header h2 {
+    color: #fd9191;
+    text-align: center;
+}
+.gallery-header h2 i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    display: block;
+}
+.gallery-header h2 p {
+    color: #aaa;
+    text-align: center;
+}
+
+.gallery-collection {
+    display: flex;
+    width: 80vw;
+    height: 75%;
+}
+.gallery-collection li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 70px 40px 100px;
+    opacity: .6;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+}
+.gallery-collection li:hover {
+    flex: 1.5 1;
+    opacity: 1;
+}
+
+.gallery-collection li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: -200px;
+    width: 80%;
+    height: 95%;
+    background-color: #ffefd5;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.gallery-collection li:hover::before {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+} 
+
+.gallery-collection li .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+} 
+.gallery-collection li .inner .txt {
+    width: 100%;
+    transition: all .5s;
+} 
+.gallery-collection li:hover .inner .txt {
+    width: 75%;
+}
+.gallery-collection li .inner .txt h3 {
+    font-size: 2rem;
+    color: #fd9191;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    transition: all .5s;
+}
+.gallery-collection li:hover .inner .txt h3 {
+    font-size: 5vw;
+    padding-top: 0;
+}
+
+.gallery-collection li .inner .txt h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: palevioletred;
+    margin-top: 20px;
+    transition: all 1s;
+} 
+.gallery-collection li:hover .inner .txt h3::after {
+    width: 150px;
+} 
+.gallery-collection li .inner .txt p {
+    color: #fd9191;
+}
+.gallery-collection li .inner figure {
+    width: 100%;
+    height: 30%;
+}
+.gallery-collection li .inner figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ 
+.gallery {position: relative;
+width: 100%;}
+
+.popup {
+    position: absolute;
+    top: -68px;
+    left: -300vw;
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 7vw 14vh 20vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    transition: all .5s;
+}
+.popup.on {
+    left: -210px;
+}
+.popup .txt {
+    flex: 0 1 25%;
+    height: 100%;
+}
+.popup .txt h2{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.popup .txt p {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    color: #ffe4e4;
+}
+.popup .txt button {
+    color:rgb(253, 202, 220);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.popup .txt button:hover {
+    color: #fff;
+    text-shadow: 0 0 20px rgb(255, 199, 207);
+}
+.popup figure {
+    flex: 0 2 70% ;
+    height: 100%;
+}
+.popup figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  Motion Graphic---------------------*/
+
+.motion .clip video {
+    width: 100%;
+    height: 600px;
+}
+.motion {
+    margin-top: 2rem;
+}
+
+
+/* moving------------- */
+.moving {
+    margin-top: 2rem;
+}
+
+.moving .container {
+    display: flex;
+    justify-content: center;
+}
+.moving video {
+    width: 500px;
+    height: 600px;
+}
+
+/* kinetic----------- */
+.kinetic {
+    margin-top: 2rem;
+}
+.kinetic img {
+    width: 100%;
+    height: 80%;
+}
+
+
+/*  Blender-----------------*/
+.blender {
+    margin-top: 8rem;
+}
+.blender .container {}
+
+.blender .container ul {
+    display: flex;
+    justify-content: space-between;
+}
+.blender .container ul li {
+    width: 33.333%;
+}
+
+
+#contact .titlett {
+    color: #ffc4c4;
+}
+
+#contact .right-z .footer-box {
+    width: 400px;   
+    align-items: center;
+    margin-bottom: 1.25rem;
+    display: flex;
+    padding: 1rem;
+    color: rgb(75, 75, 75);
+}
+#contact .right-z .footer-box i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+#changing-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fd9191;
+    text-align: center;
+    margin-top: 100px;
+    height: 100px;
+}
+
+/* 카드뒤집기 */
+.name {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+}
+
+.card1, .card2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    top: 0;left: 0;
+    backface-visibility: hidden;
+    transition: all 2s;
+}
+
+.card1 {
+    transform: perspective(800px) rotateY(0deg);
+}
+.card:hover .card1 {
+    transform: perspective(800px) rotateY(180deg);
+}
+.card2 {
+    transform: perspective(800px) rotateY(-180deg);
+}
+.card:hover .card2 {
+    transform: perspective(800px) rotateY(0deg);
+}
+
+#contact img {
+    width: 400px;
+    height: 500px;
+}
+
+
+ /* 영상쪽 마우스 모양 바꾸기 */
+main .gallery {
+    cursor: url('../image/llll.png')2 5, auto;
+}
+

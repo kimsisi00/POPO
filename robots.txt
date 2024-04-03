@@ -1,0 +1,10 @@
+Yeti(naver) Googlebot(google) Daumoa(daum)
+
+
+User-agent: *      
+Disallow: /          
+User-agent: Yeti   
+Allow: /
+
+User-agent: *
+Allow: /

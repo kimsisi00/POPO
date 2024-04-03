@@ -1,0 +1,18 @@
+@media screen and (max-width: 1140px) {
+    header nav ul li a {
+        font-size: 14px;
+    }    
+    header nav ul li.on a {
+        font-size: 1rem;
+    }
+    
+    main #home .top {
+        font-size: 14px;
+        margin: 0.8rem;
+
+    }
+}
+
+
+
+/* header {  display: none;} */
